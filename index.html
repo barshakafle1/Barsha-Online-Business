@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barsha Online Business</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    color:#0d47a1;
+    font-size:40px;
+}
+
+/* Products */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#e91e63;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* Warehouse */
+
+.warehouse{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.warehouse p{
+    margin-bottom:15px;
+}
+
+/* Contact */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.contact-form button{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:12px 25px;
+}
+
+.info{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.contact{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Barsha Online Business</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#warehouse">Warehouse</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>China Imported Products</h1>
+<p>Quality products directly imported from China at affordable prices.</p>
+<a href="#products" class="btn">Shop Now</a>
+</div>
+</section>
+
+<section id="products">
+
+<div class="title">
+<h2>Our Products</h2>
+</div>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="card-content">
+<h3>Smartphone</h3>
+<p>Latest imported smartphone from China.</p>
+<p class="price">Rs. 25,000</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+<div class="card-content">
+<h3>Wireless Headphones</h3>
+<p>Premium sound quality and comfort.</p>
+<p class="price">Rs. 2,500</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+<div class="card-content">
+<h3>Sports Shoes</h3>
+<p>High quality imported shoes.</p>
+<p class="price">Rs. 3,200</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+<div class="card-content">
+<h3>Smart Watch</h3>
+<p>Fitness and health tracking watch.</p>
+<p class="price">Rs. 4,000</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<div class="card-content">
+<h3>LED Lamp</h3>
+<p>Modern decorative lighting.</p>
+<p class="price">Rs. 900</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
+<div class="card-content">
+<h3>Kitchen Set</h3>
+<p>Imported kitchen essentials.</p>
+<p class="price">Rs. 1,800</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="warehouse">
+
+<div class="title">
+<h2>Warehouse Information</h2>
+</div>
+
+<div class="warehouse">
+<p><strong>Warehouse Name:</strong> Barsha Import Warehouse</p>
+<p><strong>Location:</strong> Kathmandu, Nepal</p>
+<p><strong>Import Source:</strong> Guangzhou, China</p>
+<p><strong>Storage Capacity:</strong> 10,000+ Products</p>
+<p><strong>Delivery Coverage:</strong> All over Nepal</p>
+<p>
+We maintain a secure warehouse facility to ensure
+all imported products are stored safely before delivery.
+</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact">
+
+<div class="contact-form">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+<div class="info">
+
+<h3>Business Information</h3>
+
+<br>
+
+<p><strong>Business Name:</strong> Barsha Online Business</p>
+
+<p><strong>Owner:</strong> Barsha Kafle</p>
+
+<p><strong>Email:</strong> info@barshaonline.com</p>
+
+<p><strong>Phone:</strong> +977-9800000000</p>
+
+<p><strong>Address:</strong> Dharan, Nepal</p>
+
+<p><strong>Import Country:</strong> China</p>
+
+<p><strong>Delivery:</strong> Nationwide</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>
+© 2026 Barsha Online Business | China Imported Products
+</p>
+</footer>
+
+<script>
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting Barsha Online Business!");
+
+});
+
+</script>
+
+</body>
+</html>
